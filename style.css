@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@100;400;700&display=swap");
+
+/* font-family: 'Dancing Script', cursive;
+font-family: 'Montserrat', sans-serif; */
+
+h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 3.5rem;
+}
+
+h2,
+p,
+span {
+  font-family: "Montserrat", sans-serif;
+}
+
+#dropZone,
+#words {
+  display: flex;
+  /* flex-flow: row nowrap; */
+  justify-content: space-between;
+  min-height: 200px;
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+}
+
+#dropBox1,
+#dropBox2,
+#dropBox3,
+#dropBox4,
+#dropBox5,
+#dropBox6,
+#dropBox7,
+#dropBox8,
+#dropBox9,
+#dropBox10 {
+  display: flex;
+  box-sizing: border-box;
+  display: inline-block;
+  /* flex-flow: column nowrap; */
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  width: 250px;
+  border: 1px solid #aaaaaa;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: rgb(136, 213, 208);
+
+  background: #abcdef;
+  box-sizing: border-box;
+  text-align: center;
+  margin-top: 50px;
+}
+
+body {
+  padding: 40px;
+}
+h2 {
+  margin-bottom: 50px;
+}
+#jumbledWordsWrapper span {
+  background: wheat;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+  padding: 15px 25px;
+  margin: 0 10px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#orderedWordsWrapper span {
+  background: #abcdef;
+  box-sizing: border-box;
+  text-align: center;
+  margin-top: 50px;
+}
