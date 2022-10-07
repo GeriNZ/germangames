@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dragndrop</title>
+    <link rel="shortcut icon" type="image/png" href="observationicon.png" />
+    <link rel="stylesheet" href="assets/style.css" />
+
+    <script src="assets/script.js" defer></script>
+  </head>
+  <body>
+
+    <div class="topnav">
+        <a href="/index.html" style="background-color: rgb(136, 213, 208); font-weight:bold">Home</a>
+        <a href="/dragndrop.html">Drag 'n drop</a>
+        <a href="#">Link</a>
+        <a href="/resources.html">Further Resources</a>
+      </div>
+
+
+    <h1>Welcome to your first puzzle game in German!</h1>
+<h2>How to play</h2>
+<p>Drag the words into the boxes to form this English sentence in German.</p>
+
+<h2 style="background-color: rgb(136, 213, 208); padding: 15px; text-align: center;">She was nine years old and lived alone there.</h2>
+<p>Discuss your thought process with your partner. What do you think the words mean? How are you deciding what order they should go in?</p>
+
+    <div id="dropZone">
+      <div id="dropBox1" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <p>1</p>
+      </div>
+
+      <div id="dropBox2" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <p>2</p>
+      </div>
+      <div id="dropBox3" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <p>3</p>
+      </div>
+      <div id="dropBox4" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <p>4</p>
+      </div>
+      <div id="dropBox5" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <p>5</p>
+      </div>
+      <div id="dropBox6" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <p>6</p>
+      </div>
+      <div id="dropBox7" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <p>7</p>
+      </div>
+      <div id="dropBox8" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <p>8</p>
+      </div>
+      <div id="dropBox9" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <p>9</p>
+      </div>
+      <div id="dropBox10" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <p>10</p>
+      </div>
+    </div>
+
+    <div id="words" ondrop="drop(event)" ondragover="allowDrop(event)">
+   
+
+    <div id="da" draggable="true" ondragstart="drag(event)">da</div>
+      <div id="war" draggable="true" ondragstart="drag(event)">war</div>
+    
+      <div id="Jahre" draggable="true" ondragstart="drag(event)">Jahre</div>
+      <div id="allein" draggable="true" ondragstart="drag(event)">allein</div>
+      <div id="Sie" draggable="true" ondragstart="drag(event)">Sie</div>
+      <div id="sie" draggable="true" ondragstart="drag(event)">sie</div>
+      <div id="lebte" draggable="true" ondragstart="drag(event)">lebte</div>
+      
+      <div id="alt" draggable="true" ondragstart="drag(event)">alt</div>
+      <div id="und" draggable="true" ondragstart="drag(event)">und</div>
+      <div id="neun" draggable="true" ondragstart="drag(event)">neun</div>
+      
+    </div>
+
+    <p>Okay! Let's see how you did. In this second version, the words will only go into the slot they belong in. How did you do?</p>
+
+
+    <h1>Let's check your answers</h1>
+<h2>Instruction: </h2>
+<p>Drag the words in the right order. In this version, they will only snap if the order is correct</p>
+<div id="jumbledWordsWrapper">
+  <span id="und" data-source-id="und" draggable="true">und</span>
+  <span id="alt" data-source-id="alt" draggable="true">alt</span>
+  <span id="Jahre" data-source-id="Jahre" draggable="true">Jahre</span>
+  
+  <span id="sie" data-source-id="sie" draggable="sie">sie</span>
+  <span id="war" data-source-id="war" draggable="true">war</span>
+  <span id="lebte" data-source-id="lebte" draggable="true">lebte</span>
+  <span id="da" data-source-id="da" draggable="true">da</span>
+  <span id="allein" data-source-id="allein" draggable="true">allein</span>
+  <span id="neun" data-source-id="neun" draggable="true">neun</span>
+  <span id="Sie" data-source-id="Sie" draggable="true">Sie</span
+</div>
+<div id="orderedWordsWrapper">
+  <span data-target-id="Sie"></span>
+  <span data-target-id="war"></span>
+  <span data-target-id="neun"></span>
+  <span data-target-id="Jahre"></span>
+  <span data-target-id="alt"></span>
+  <span data-target-id="und"></span>
+  <span data-target-id="sie"></span>
+  <span data-target-id="lebte"></span>
+  <span data-target-id="allein"></span>
+  <span data-target-id="da"></span>
+</div>
+  </body>
+  
+</html>

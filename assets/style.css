@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@100;400;700&display=swap");
+
+/* font-family: 'Dancing Script', cursive;
+font-family: 'Montserrat', sans-serif; */
+
+h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 3.5rem;
+  color: #333;
+}
+
+h2,
+p,
+span,
+li,
+.topnav {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: wheat;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: wheat;
+  color: black;
+}
+
+footer {
+  margin-top: 300px;
+  background-color: #eceaea;
+  height: 60px;
+  text-align: center;
+  padding: 10px;
+}
+
+/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+#dropZone,
+#words {
+  display: flex;
+  /* flex-flow: column wrap; */
+  justify-content: space-between;
+  min-height: 200px;
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+#dropBox1,
+#dropBox2,
+#dropBox3,
+#dropBox4,
+#dropBox5,
+#dropBox6,
+#dropBox7,
+#dropBox8,
+#dropBox9,
+#dropBox10 {
+  display: flex;
+  box-sizing: border-box;
+  display: inline-block;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  height:150px;
+  width: 150px;
+  border: 2px solid #aaaaaa;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: rgb(136, 213, 208);
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 700px) {
+  #dropZone,
+  #words {
+      
+     display: block;
+     flex-direction: column;
+     text-align: center;
+      background-color: wheat;
+      
+      
+  }
+  
+}
+
+/* body {
+  padding: 40px;
+}
+h2 {
+  margin-bottom: 50px;
+} */
+#jumbledWordsWrapper span {
+  background: wheat;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  padding: 15px 25px;
+  margin: 0 10px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+#orderedWordsWrapper span {
+  background: rgb(136, 213, 208);
+/* 
+  background: #abcdef; */
+  box-sizing: border-box;
+  text-align: center;
+  margin-top: 50px;
+}
