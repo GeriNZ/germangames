@@ -34,9 +34,16 @@ li,
 }
 
 /* Change color on hover */
-.topnav a:hover {
+ .topnav a:hover {
   background-color: wheat;
   color: black;
+}
+
+/* Change color on hover */
+.active {
+  
+  background-color:rgb(136, 213, 208);
+  text-decoration: underline;
 }
 
 footer {
@@ -57,8 +64,55 @@ footer {
 
 
 
+/* The hero image */
+.hero {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  
+ }
+ .hero img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  filter: brightness(70%);
+  
+ }
+ .hero .hero-text {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  z-index: 1;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ }
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 130%;
+ 
+}
+
+.hero-text h1 {
+color: rgb(136, 213, 208);
 
 
+}
+
+.hero-card {
+  background-color: rgba(67, 14, 14, 0.434);
+  width: 50%;
+}
 
 
 #dropZone,
