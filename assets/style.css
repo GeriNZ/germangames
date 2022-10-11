@@ -34,15 +34,14 @@ li,
 }
 
 /* Change color on hover */
- .topnav a:hover {
+.topnav a:hover {
   background-color: wheat;
   color: black;
 }
 
 /* Change color on hover */
 .active {
-  
-  background-color:rgb(136, 213, 208);
+  background-color: rgb(136, 213, 208);
   text-decoration: underline;
 }
 
@@ -59,10 +58,9 @@ footer {
   .topnav a {
     float: none;
     width: 100%;
+    align-items: center;
   }
 }
-
-
 
 /* The hero image */
 .hero {
@@ -70,17 +68,15 @@ footer {
   height: 100vh;
   overflow: hidden;
   position: relative;
-  
- }
- .hero img {
+}
+.hero img {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   filter: brightness(70%);
-  
- }
- .hero .hero-text {
+}
+.hero .hero-text {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -89,7 +85,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
- }
+}
 
 /* Place text in the middle of the image */
 .hero-text {
@@ -100,20 +96,16 @@ footer {
   transform: translate(-50%, -50%);
   color: white;
   font-size: 130%;
- 
 }
 
 .hero-text h1 {
-color: rgb(136, 213, 208);
-
-
+  color: rgb(136, 213, 208);
 }
 
 .hero-card {
   background-color: rgba(67, 14, 14, 0.434);
   width: 50%;
 }
-
 
 #dropZone,
 #words {
@@ -143,7 +135,7 @@ color: rgb(136, 213, 208);
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  height:150px;
+  height: 150px;
   width: 150px;
   border: 2px solid #aaaaaa;
   padding: 1rem;
@@ -157,15 +149,43 @@ color: rgb(136, 213, 208);
 @media screen and (max-width: 700px) {
   #dropZone,
   #words {
-      
-     display: block;
-     flex-direction: column;
-     text-align: center;
-      background-color: wheat;
-      
-      
+    display: block;
+    flex-direction: column;
+    text-align: center;
+    background-color: wheat;
+    min-height: 100px;
+    font-size: 1rem;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
   }
-  
+
+  #dropBox1,
+  #dropBox2,
+  #dropBox3,
+  #dropBox4,
+  #dropBox5,
+  #dropBox6,
+  #dropBox7,
+  #dropBox8,
+  #dropBox9,
+  #dropBox10 {
+    display: block;
+    flex-direction: column;
+    text-align: center;
+
+    height: 10px;
+    margin: 15px;
+  }
+
+  .hero-text h1,
+  .hero-text h2,
+  .hero-text p {
+    font-size: 1rem;
+    color: black;
+  }
 }
 
 /* body {
@@ -190,7 +210,7 @@ h2 {
 }
 #orderedWordsWrapper span {
   background: rgb(136, 213, 208);
-/* 
+  /* 
   background: #abcdef; */
   box-sizing: border-box;
   text-align: center;
