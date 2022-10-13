@@ -119,6 +119,36 @@ footer {
   cursor: pointer;
 }
 
+#Sie:active,
+#war:active,
+#neun:active,
+#Jahre:active,
+#alt:active,
+#und:active, 
+#sie:active,
+#lebte:active,
+#allein:active,
+#da:active
+{
+
+  color: rgb(136, 213, 208);
+}
+
+
+#dropBox1:hover,
+#dropBox2:hover,
+#dropBox3:hover,
+#dropBox4:hover,
+#dropBox5:hover,
+#dropBox6:hover,
+#dropBox7:hover,
+#dropBox8:hover,
+#dropBox9:hover,
+#dropBox10:hover {
+  background-color: wheat;
+}
+
+
 #dropBox1,
 #dropBox2,
 #dropBox3,
@@ -216,3 +246,26 @@ h2 {
   text-align: center;
   margin-top: 50px;
 }
+
+.draggable {
+  
+  background: rgb(136, 213, 208);
+  margin:10px;
+  padding:5px;}
+
+  #word1,#word2 {
+    display:inline-block;
+    min-width:30px;min-height:10px;border-style:solid;
+    border-width:0px;border-bottom-width:2px;
+    
+  }
+
+  p {
+    display:inline;
+  }
+
+  #wordsblank {
+    margin-top: 20px;
+    margin: 15 px;
+    
+  }
