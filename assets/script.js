@@ -78,3 +78,116 @@ function dropHandler(e) {
     });
   }
 }
+
+
+// Good morning
+let counter = document.getElementById("counter")
+let result = document.getElementById("result")
+let count = 0
+counter.addEventListener("click", () => {
+  count += 1
+  result.innerHTML = count
+})
+
+// Good day
+let counter1 = document.getElementById("counter1")
+let result1 = document.getElementById("result1")
+let count1 = 0
+counter1.addEventListener("click", () => {
+  count1 += 1
+  result1.innerHTML = count1
+})
+
+// Good evening
+let counter2 = document.getElementById("counter2")
+let result2 = document.getElementById("result2")
+let count2 = 0
+counter2.addEventListener("click", () => {
+  count2 += 1
+  result2.innerHTML = count2
+})
+
+// hallo
+let counter3 = document.getElementById("counter3")
+let result3 = document.getElementById("result3")
+let count3 = 0
+counter3.addEventListener("click", () => {
+  count3 += 1
+  result3.innerHTML = count3
+})
+
+// moin
+let counter4 = document.getElementById("counter4")
+let result4 = document.getElementById("result4")
+let count4 = 0
+counter4.addEventListener("click", () => {
+  count4 += 1
+  result4.innerHTML = count4
+})
+
+// Herzlich Willkommen
+let counter5 = document.getElementById("counter5")
+let result5 = document.getElementById("result5")
+let count5 = 0
+counter5.addEventListener("click", () => {
+  count5 += 1
+  result5.innerHTML = count5
+})
+
+// Gruess gott
+let counter6 = document.getElementById("counter6")
+let result6 = document.getElementById("result6")
+let count6 = 0
+counter6.addEventListener("click", () => {
+  count6 += 1
+  result6.innerHTML = count6
+})
+
+// gruess dich
+let counter7 = document.getElementById("counter7")
+let result7 = document.getElementById("result7")
+let count7 = 0
+counter7.addEventListener("click", () => {
+  count7 += 1
+  result7.innerHTML = count7
+})
+
+// servus
+let counter8 = document.getElementById("counter8")
+let result8 = document.getElementById("result8")
+let count8 = 0
+counter8.addEventListener("click", () => {
+  count8 += 1
+  result8.innerHTML = count8
+})
+
+// gruezi
+let counter9 = document.getElementById("counter9")
+let result9 = document.getElementById("result9")
+let count9 = 0
+counter9.addEventListener("click", () => {
+  count9 += 1
+  result9.innerHTML = count9
+})
+
+
+
+const resetCounter = () =>{
+  // Update the UI
+  result.innerHTML = 0;
+  result1.innerHTML = 0;
+  result2.innerHTML = 0;
+  result3.innerHTML = 0;
+  result4.innerHTML = 0;
+  result5.innerHTML = 0;
+  result6.innerHTML = 0;
+  result7.innerHTML = 0;
+  result8.innerHTML = 0;
+  result9.innerHTML = 0;
+  // Update the variable container
+  // count = 0;
+}
+
+
+const resetButton = document.getElementById("reset-btn");
+resetButton.addEventListener('click', resetCounter);

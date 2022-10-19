@@ -18,13 +18,13 @@ li,
 }
 
 /* Style the top navigation bar */
-.topnav {
+.topnav, button {
   overflow: hidden;
   background-color: #333;
 }
 
 /* Style the topnav links */
-.topnav a {
+.topnav a, button {
   float: left;
   display: block;
   color: wheat;
@@ -34,7 +34,7 @@ li,
 }
 
 /* Change color on hover */
-.topnav a:hover {
+.topnav a:hover, button:hover {
   background-color: wheat;
   color: black;
 }
@@ -52,10 +52,40 @@ footer {
   text-align: center;
   padding: 10px;
 }
+button {
+  margin: 20px;
+  cursor: pointer;
+}
+
+
+
+
+.counting {
+  float: left;
+  display: block;
+  
+  background-color: rgb(136, 213, 208);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin: 20px;
+}
+
+#reset-btn {
+  background-color: rgb(136, 213, 208);
+  color: black;
+  font-style: italic;
+}
+
+#reset-btn:hover {
+  background-color: black;
+  color: rgb(136, 213, 208);
+  font-weight: bold;
+}
 
 /* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .topnav a {
+  .topnav a, button {
     float: none;
     width: 100%;
     align-items: center;
@@ -215,6 +245,10 @@ footer {
   .hero-text p {
     font-size: 1rem;
     color: black;
+  }
+
+  video {
+    width: 100%;
   }
 }
 
