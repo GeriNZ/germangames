@@ -63,7 +63,6 @@ button {
 .counting {
   float: left;
   display: block;
-  
   background-color: rgb(136, 213, 208);
   text-align: center;
   padding: 14px 16px;
@@ -83,6 +82,15 @@ button {
   font-weight: bold;
 }
 
+
+#greetings {
+  margin-top: 20px;
+  padding-bottom: 350px;
+}
+
+video {
+  margin: 30px 10px 25px 10px
+}
 /* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .topnav a, button {
