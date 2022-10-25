@@ -259,7 +259,7 @@ video {
     width: 100%;
   }
 
-  .drawing-area {
+  .drawing-area, .drawing-area1 {
     width: 100%;
   }
 }
@@ -326,7 +326,7 @@ h2 {
     min-height: 95vh;
   }
   
-  .drawing-area {
+  .drawing-area, .drawing-area1 {
     box-shadow: 0 0 6px 0 #999;
   }
   
