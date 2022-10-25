@@ -1,36 +1,36 @@
 // =============
 // == Globals ==
 // =============
-const canvas = document.getElementById('drawing-area');
-const canvasContext = canvas.getContext('2d');
-const clearButton = document.getElementById('clear-button');
+const canvas = document.getElementById("drawing-area");
+const canvasContext = canvas.getContext("2d");
+const clearButton = document.getElementById("clear-button");
 const state = {
-  mousedown: false
+  mousedown: false,
 };
 
 // ===================
 // == Configuration ==
 // ===================
-const lineWidth = 5;
+const lineWidth = 10;
 const halfLineWidth = lineWidth / 2;
-const fillStyle = '#333';
-const strokeStyle = '#333';
-const shadowColor = '#333';
+const fillStyle = "#333";
+const strokeStyle = "#333";
+const shadowColor = "#333";
 const shadowBlur = lineWidth / 0;
 
 // =====================
 // == Event Listeners ==
 // =====================
-canvas.addEventListener('mousedown', handleWritingStart);
-canvas.addEventListener('mousemove', handleWritingInProgress);
-canvas.addEventListener('mouseup', handleDrawingEnd);
-canvas.addEventListener('mouseout', handleDrawingEnd);
+canvas.addEventListener("mousedown", handleWritingStart);
+canvas.addEventListener("mousemove", handleWritingInProgress);
+canvas.addEventListener("mouseup", handleDrawingEnd);
+canvas.addEventListener("mouseout", handleDrawingEnd);
 
-canvas.addEventListener('touchstart', handleWritingStart);
-canvas.addEventListener('touchmove', handleWritingInProgress);
-canvas.addEventListener('touchend', handleDrawingEnd);
+canvas.addEventListener("touchstart", handleWritingStart);
+canvas.addEventListener("touchmove", handleWritingInProgress);
+canvas.addEventListener("touchend", handleDrawingEnd);
 
-clearButton.addEventListener('click', handleClearButtonClick);
+clearButton.addEventListener("click", handleClearButtonClick);
 
 // ====================
 // == Event Handlers ==
@@ -39,7 +39,7 @@ function handleWritingStart(event) {
   event.preventDefault();
 
   const mousePos = getMousePositionOnCanvas(event);
-  
+
   canvasContext.beginPath();
 
   canvasContext.moveTo(mousePos.x, mousePos.y);
@@ -50,13 +50,13 @@ function handleWritingStart(event) {
   canvasContext.shadowBlur = null;
 
   canvasContext.fill();
-  
+
   state.mousedown = true;
 }
 
 function handleWritingInProgress(event) {
   event.preventDefault();
-  
+
   if (state.mousedown) {
     const mousePos = getMousePositionOnCanvas(event);
 
@@ -67,20 +67,20 @@ function handleWritingInProgress(event) {
 
 function handleDrawingEnd(event) {
   event.preventDefault();
-  
+
   if (state.mousedown) {
     canvasContext.shadowColor = shadowColor;
     canvasContext.shadowBlur = shadowBlur;
 
     canvasContext.stroke();
   }
-  
+
   state.mousedown = false;
 }
 
 function handleClearButtonClick(event) {
   event.preventDefault();
-  
+
   clearCanvas();
 }
 

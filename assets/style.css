@@ -258,6 +258,10 @@ video {
   video {
     width: 100%;
   }
+
+  .drawing-area {
+    width: 100%;
+  }
 }
 
 /* body {
