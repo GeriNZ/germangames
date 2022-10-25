@@ -87,15 +87,35 @@ function handleClearButtonClick(event) {
 // ======================
 // == Helper Functions ==
 // ======================
+
+window.addEventListener('mousemove', mouseMoveEvent);
+
+function mouseMoveEvent(e) {
+    var canvas = document.getElementById('canvas');
+    var rect = canvas.getBoundingClientRect();
+    var mouseX = e.clientX - rect.left;
+    var mouseY = e.clientY - rect.top;
+};
+
+
 function getMousePositionOnCanvas(event) {
-  const clientX = event.clientX || event.touches[0].clientX;
-  const clientY = event.clientY || event.touches[0].clientY;
+ 
+  var rect = canvas.getBoundingClientRect();
+  const clientX = (event.clientX-rect.left ) / (rect.right - rect.left) * canvas.width || event.touches[0].clientX;
+  const clientY = (event.clientY-rect.top) / (rect.bottom - rect.top) * canvas.height || event.touches[0].clientY;
   const { offsetLeft, offsetTop } = event.target;
-  const canvasX = clientX - offsetLeft;
-  const canvasY = clientY - offsetTop;
+  const canvasX = clientX 
+  const canvasY = clientY 
 
   return { x: canvasX, y: canvasY };
 }
+
+
+
+
+
+
+
 
 function clearCanvas() {
   canvasContext.clearRect(0, 0, canvas.width, canvas.height);
