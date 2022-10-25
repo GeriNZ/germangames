@@ -11,7 +11,7 @@ const state = {
 // ===================
 // == Configuration ==
 // ===================
-const lineWidth = 10;
+const lineWidth = 5;
 const halfLineWidth = lineWidth / 2;
 const fillStyle = "#333";
 const strokeStyle = "#333";
@@ -137,11 +137,11 @@ const state1 = {
 // ===================
 // == Configuration ==
 // ===================
-const lineWidth1 = 10;
+const lineWidth1 =5;
 const halfLineWidth1 = lineWidth1 / 2;
-const fillStyle1 = "#333";
-const strokeStyle1 = "#333";
-const shadowColor1 = "#333";
+const fillStyle1 = "red";
+const strokeStyle1 = "red";
+const shadowColor1 = "red";
 const shadowBlur1 = lineWidth1 / 0;
 
 // =====================
@@ -170,7 +170,7 @@ function handleWritingStart1(event) {
 
   canvasContext1.moveTo(mousePos1.x, mousePos1.y);
 
-  canvasContext1.lineWidth1 = lineWidth1;
+  canvasContext1.lineWidth = lineWidth;
   canvasContext1.strokeStyle1 = strokeStyle1;
   canvasContext1.shadowColor1 = null;
   canvasContext1.shadowBlur1 = null;
