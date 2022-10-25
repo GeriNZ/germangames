@@ -191,3 +191,5 @@ const resetCounter = () =>{
 
 const resetButton = document.getElementById("reset-btn");
 resetButton.addEventListener('click', resetCounter);
+
+

@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Matching Game</title>
+    <title>Paint by numbers</title>
     <link rel="icon" type="image/png" href="assets/img/favicon.png" />
     <link rel="stylesheet" href="assets/style.css" />
 
-    <script src="assets/script.js" defer></script>
+    <script src="assets/numbers.js" defer></script>
   </head>
   <body>
 
@@ -16,19 +16,22 @@
       <a href="/index.html" style="background-color: rgb(136, 213, 208); font-weight:bold">Home</a>
       <a href="/dragndrop.html">Drag 'n drop</a>
       <a href="/tvcount.html">TV Counting</a>
-      <a href="/numbers.html">Paint by numbers</a>
+      <a href="/numbers.html" class="active">Paint by numbers</a>
       <a href="/fillblanks.html" >Fill the blanks</a>
-      <a href="/matching.html" class="active">Match the words</a>
+      <a href="/matching.html" >Match the words</a>
       <a href="/resources.html" >Further Resources</a>
     </div>
 
 
-    <h1>Matching games</h1>
+    <h1>Paint by numbers</h1>
 <h2>Additional material</h2>
 <p>Coming soon.</p>
 
 
-
+<div id="container" class="container">
+    <canvas id="drawing-area" class="drawing-area" height="500" width="500" style="background: url('assets/img/numbers.png'); background-repeat: no-repeat; background-size: 210%"></canvas>
+    <button id="clear-button" class="clear-button" type="button">Clear</button>
+  </div>
 
   </body>
 

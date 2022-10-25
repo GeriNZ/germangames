@@ -311,3 +311,27 @@ h2 {
     margin: 15 px;
     
   }
+
+  
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+  }
+  
+  .drawing-area {
+    box-shadow: 0 0 6px 0 #999;
+  }
+  
+  .clear-button {
+    margin: 2em;
+    font-size: 16px;
+  }
+  
+
+  
+
+  
