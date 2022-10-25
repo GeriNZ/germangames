@@ -101,8 +101,8 @@ function mouseMoveEvent(e) {
 function getMousePositionOnCanvas(event) {
  
   var rect = canvas.getBoundingClientRect();
-  const clientX = (event.clientX-rect.left ) / (rect.right - rect.left) * canvas.width || event.touches[0].clientX;
-  const clientY = (event.clientY-rect.top) / (rect.bottom - rect.top) * canvas.height || event.touches[0].clientY;
+  const clientX = (event.clientX-rect.left ) / (rect.right - rect.left) * canvas.width || (event.touches[0].clientX - rect.left) / (rect.right - rect.left) * canvas.width;
+  const clientY = (event.clientY-rect.top) / (rect.bottom - rect.top) * canvas.height || (event.touches[0].clientY - rect.top) / (rect.bottom - rect.top) * canvas.height;
   const { offsetLeft, offsetTop } = event.target;
   const canvasX = clientX 
   const canvasY = clientY 
