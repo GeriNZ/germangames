@@ -13,9 +13,9 @@ const state = {
 // ===================
 const lineWidth = 5;
 const halfLineWidth = lineWidth / 2;
-const fillStyle = "#333";
-const strokeStyle = "#333";
-const shadowColor = "#333";
+const fillStyle = "blue";
+const strokeStyle = "blue";
+const shadowColor = "blue";
 const shadowBlur = lineWidth / 0;
 
 // =====================

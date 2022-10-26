@@ -328,6 +328,15 @@ h2 {
   
   .drawing-area, .drawing-area1 {
     box-shadow: 0 0 6px 0 #999;
+    
+  }
+
+  .container {
+    /* cursor:  pointer;	 */
+    /* cursor: url('/assets/img/pen.png'), auto; */
+
+    cursor: url('/assets/img/iconmonstr-circle-lined-24.png'), auto;
+    
   }
   
   .clear-button {
